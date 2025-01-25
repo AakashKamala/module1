@@ -719,6 +719,15 @@
   .my-auto {
     margin-block: auto;
   }
+  .mt-0 {
+    margin-top: calc(var(--spacing) * 0);
+  }
+  .mt-0\.75 {
+    margin-top: calc(var(--spacing) * 0.75);
+  }
+  .mt-1 {
+    margin-top: calc(var(--spacing) * 1);
+  }
   .mt-2 {
     margin-top: calc(var(--spacing) * 2);
   }
@@ -730,6 +739,9 @@
   }
   .mt-8 {
     margin-top: calc(var(--spacing) * 8);
+  }
+  .mt-10 {
+    margin-top: calc(var(--spacing) * 10);
   }
   .mt-16 {
     margin-top: calc(var(--spacing) * 16);
@@ -746,8 +758,17 @@
   .mt-\[-40px\] {
     margin-top: -40px;
   }
+  .mt-\[20px\] {
+    margin-top: 20px;
+  }
+  .mt-\[2\] {
+    margin-top: 2;
+  }
   .mt-\[100px\] {
     margin-top: 100px;
+  }
+  .mt-\[140px\] {
+    margin-top: 140px;
   }
   .mr-2 {
     margin-right: calc(var(--spacing) * 2);
@@ -764,11 +785,17 @@
   .mr-\[216px\] {
     margin-right: 216px;
   }
+  .mb-4 {
+    margin-bottom: calc(var(--spacing) * 4);
+  }
   .mb-90 {
     margin-bottom: calc(var(--spacing) * 90);
   }
   .mb-\[00px\] {
     margin-bottom: 00px;
+  }
+  .mb-\[80px\] {
+    margin-bottom: 80px;
   }
   .mb-\[100px\] {
     margin-bottom: 100px;
@@ -779,14 +806,17 @@
   .mb-\[160px\] {
     margin-bottom: 160px;
   }
+  .mb-\[190px\] {
+    margin-bottom: 190px;
+  }
   .mb-\[1px\] {
     margin-bottom: 1px;
   }
-  .mb-\[80px\] {
-    margin-bottom: 80px;
+  .mb-\[20px\] {
+    margin-bottom: 20px;
   }
-  .mb-\[190px\] {
-    margin-bottom: 190px;
+  .mb-\[30px\] {
+    margin-bottom: 30px;
   }
   .mb-\[200px\] {
     margin-bottom: 200px;
@@ -932,9 +962,6 @@
   .w-50 {
     width: calc(var(--spacing) * 50);
   }
-  .w-\[50\%\] {
-    width: 50%;
-  }
   .w-\[1051px\] {
     width: 1051px;
   }
@@ -950,11 +977,32 @@
   .w-\[1px\] {
     width: 1px;
   }
+  .w-\[50\%\] {
+    width: 50%;
+  }
+  .w-\[66px\] {
+    width: 66px;
+  }
   .w-\[555px\] {
     width: 555px;
   }
+  .w-\[576px\] {
+    width: 576px;
+  }
+  .w-\[666px\] {
+    width: 666px;
+  }
+  .w-\[700px\] {
+    width: 700px;
+  }
+  .w-\[980px\] {
+    width: 980px;
+  }
   .w-\[1251px\] {
     width: 1251px;
+  }
+  .w-\[px\] {
+    width: px;
   }
   .w-full {
     width: 100%;
@@ -1384,6 +1432,13 @@
       --tw-space-y-reverse: 1;
     }
   }
+  .space-x-2 {
+    :where(& > :not(:last-child)) {
+      --tw-space-x-reverse: 0;
+      margin-inline-start: calc(calc(var(--spacing) * 2) * var(--tw-space-x-reverse));
+      margin-inline-end: calc(calc(var(--spacing) * 2) * calc(1 - var(--tw-space-x-reverse)));
+    }
+  }
   .space-x-4 {
     :where(& > :not(:last-child)) {
       --tw-space-x-reverse: 0;
@@ -1396,6 +1451,13 @@
       --tw-space-x-reverse: 0;
       margin-inline-start: calc(calc(var(--spacing) * 6) * var(--tw-space-x-reverse));
       margin-inline-end: calc(calc(var(--spacing) * 6) * calc(1 - var(--tw-space-x-reverse)));
+    }
+  }
+  .space-x-10 {
+    :where(& > :not(:last-child)) {
+      --tw-space-x-reverse: 0;
+      margin-inline-start: calc(calc(var(--spacing) * 10) * var(--tw-space-x-reverse));
+      margin-inline-end: calc(calc(var(--spacing) * 10) * calc(1 - var(--tw-space-x-reverse)));
     }
   }
   .space-x-reverse {
@@ -1909,14 +1971,50 @@
   .pt-\[60px\] {
     padding-top: 60px;
   }
+  .pt-\[80px\] {
+    padding-top: 80px;
+  }
+  .pt-\[100px\] {
+    padding-top: 100px;
+  }
+  .pt-\[200px\] {
+    padding-top: 200px;
+  }
+  .pt-\[201px\] {
+    padding-top: 201px;
+  }
   .pt-\[px\] {
     padding-top: px;
+  }
+  .pr-7 {
+    padding-right: calc(var(--spacing) * 7);
+  }
+  .pr-8 {
+    padding-right: calc(var(--spacing) * 8);
+  }
+  .pr-\[60px\] {
+    padding-right: 60px;
+  }
+  .pr-\[6px\] {
+    padding-right: 6px;
+  }
+  .pr-\[100px\] {
+    padding-right: 100px;
+  }
+  .pb-\[60px\] {
+    padding-bottom: 60px;
+  }
+  .pb-\[200px\] {
+    padding-bottom: 200px;
+  }
+  .pb-\[20px\] {
+    padding-bottom: 20px;
   }
   .pb-\[30px\] {
     padding-bottom: 30px;
   }
-  .pb-\[60px\] {
-    padding-bottom: 60px;
+  .pb-\[100px\] {
+    padding-bottom: 100px;
   }
   .text-center {
     text-align: center;
@@ -1972,14 +2070,26 @@
     font-size: var(--text-xl);
     line-height: var(--tw-leading, var(--text-xl--line-height));
   }
-  .text-\[16px\] {
-    font-size: 16px;
+  .text-\[18px\] {
+    font-size: 18px;
   }
   .text-\[20px\] {
     font-size: 20px;
   }
   .text-\[24px\] {
     font-size: 24px;
+  }
+  .text-\[160px\] {
+    font-size: 160px;
+  }
+  .text-\[16px\] {
+    font-size: 16px;
+  }
+  .text-\[1px\] {
+    font-size: 1px;
+  }
+  .text-\[30px\] {
+    font-size: 30px;
   }
   .text-\[52px\] {
     font-size: 52px;
