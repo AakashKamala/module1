@@ -2,5 +2,8 @@
   "dependencies": {
     "@tailwindcss/cli": "^4.0.0",
     "tailwindcss": "^4.0.0"
+  },
+  "scripts": {
+    "dev": "tailwindcss -i ./src/home.css -o ./dist/home.css --watch"
   }
 }
