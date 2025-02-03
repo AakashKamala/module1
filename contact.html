@@ -14,18 +14,19 @@
     </style>
 </head>
 <body>
-    <header class="py-4 mb-[100px]">
-        <nav class="w-[100%] px-[10%] flex flex-wrap justify-between items-center mb-[100px]">
+
+    <div class="w-[100vw] pt-6">
+        <nav class="w-[80%] max-w-[1280px] mx-auto flex flex-wrap justify-between items-center mb-[100px]">
           <!-- Logo -->
         <div class="flex gap-2">
             <div>
                 <img width="27" height="37" src="./images/logoo.png" />
-               </div>
+              </div>
               <div class="text-xl font-bold text-gray-800">
                 Startup Landing
               </div>
         </div>
-           
+          
       
           <!-- Navigation Links -->
           <div>
@@ -44,7 +45,11 @@
             </button>
           </div>
         </nav>
-    </header>
+      </div>
+
+
+      <div class="max-w-[1920px] mx-auto z-20">
+    
     <!-- contact us -->
      <div class="bg-gradient-to-b from-[#FFFEFC80] to-[#FEFAF5]">
 
@@ -91,7 +96,7 @@
 
     <!-- get in touch -->
 
-    <div class="bg-[#F9FAFC] pt-[100px] pb-[100px]">
+    <!-- <div class="bg-[#F9FAFC] pt-[100px] pb-[100px]">
         <div class="mb-[50px]">
             <p class="text-center font-semibold text-[40px] leading-[52px] max-w-[465px] mx-auto">Get in touch with us. We're here to assist you.</p>
         </div>
@@ -197,7 +202,92 @@
                 <button class="font-medium text-[16px] bg-[#FABF62] text-white px-30 py-2 mt-8">Submit Information</button>
             </div>
         </div>
+    </div> -->
+
+
+
+    <div class="bg-[#F9FAFC] py-[100px] flex flex-col justify-center">
+        <div class="mb-6 text-center">
+            <p class="text-[40px] leading-[52px] max-w-[456px] mx-auto font-semibold text-black">Get in touch with us. We're here to assist you.</p>
+        </div>
+        <div class="w-[80%] mx-auto max-w-[1013px] bg-white rounded-[20px] p-10 shadow-md">
+            
+            <div class="grid grid-cols-2 gap-6">
+                <div>
+                    <label class="block text-gray-400">Full name</label>
+                    <p class="text-black">Ram Kumar Sharma</p>
+                    <div class="border-b border-gray-400"></div>
+                </div>
+                <div>
+                    <label class="block text-gray-400">Email address</label>
+                    <div class="border-b border-gray-400"></div>
+                </div>
+                <div>
+                    <label class="block text-gray-400">Phone number</label>
+                    <div class="border-b border-gray-400"></div>
+                </div>
+                <div>
+                    <label class="block text-gray-400">Date of birth</label>
+                    <div class="border-b border-gray-400"></div>
+                </div>
+                <div>
+                    <label class="block text-gray-400">Gender</label>
+                    <div class="border-b border-gray-400"></div>
+                </div>
+                <div>
+                    <label class="block text-gray-400">City</label>
+                    <div class="border-b border-gray-400"></div>
+                </div>
+                <div>
+                    <label class="block text-gray-400">State</label>
+                    <div class="border-b border-gray-400"></div>
+                </div>
+                <div>
+                    <label class="block text-gray-400">Country</label>
+                    <div class="border-b border-gray-400"></div>
+                </div>
+                <div class="col-span-2">
+                    <label class="block text-gray-400">Address</label>
+                    <div class="border-b border-gray-400"></div>
+                </div>
+                <div class="col-span-2">
+                    <label class="block text-gray-400">Message</label>
+                    <div class="border-b border-gray-400"></div>
+                </div>
+                <div>
+                    <label class="block text-gray-400">Request a counselling session</label>
+                    <div class="flex gap-6 mt-2">
+                        <div class="flex items-center gap-2">
+                            <div class="w-5 h-5 bg-[#FFEED3] rounded-full flex items-center justify-center">
+                                <div class="w-3 h-3 bg-[#FABF62] rounded-full"></div>
+                            </div>
+                            <span>Yes</span>
+                        </div>
+                        <div class="flex items-center gap-2">
+                            <div class="w-5 h-5 bg-[#FFEED3] rounded-full"></div>
+                            <span>No</span>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <label class="block text-gray-400">Upload your CV/Resume</label>
+                    <div class="flex items-center mt-2 gap-2">
+                        <img src="./images/choose.png" class="h-6" alt="Upload" />
+                        <div class="border-b border-gray-400 w-full"></div>
+                    </div>
+                </div>
+                <div class="col-span-2 flex items-center gap-3">
+                    <!-- <input type="checkbox" class="w-5 h-5 bg-[#FFEED3] rounded-md checked:bg-[#F7B267]" /> -->
+                    <input type="checkbox" class="appearance-none bg-[#FFEED3] w-[28px] h-[28px] rounded-md checked:bg-[#F7B267]" />
+                    <p class="text-gray-700">Agree terms and conditions</p>
+                </div>
+                <div class="col-span-2 flex mt-4">
+                    <button class="bg-[#FABF62] text-white py-2 md:px-36 px-18 font-medium text-[16px] hover:bg-[#e5a04b]">Submit Information</button>
+                </div>
+            </div>
+        </div>
     </div>
+    
 
     <!-- map -->
      <div class="max-w-[1251px] w-[80%] mx-auto mt-[100px] mb-[100px]">
@@ -291,6 +381,8 @@
           </div>
        </div>
 
+       </div>
+
      <!-- bottom banner -->
      <div class="w-[80%] max-w-[1280px] bg-[#183656] flex flex-wrap md:flex-nowrap mx-auto items-center py-[30px] rounded-2xl">
         <div class="my-auto">
@@ -314,88 +406,90 @@
 
      <!-- footer -->
 
-     <div class="px-[10%] mx-auto w-[100%] mt-[100px] mb-[40px]">
-        <div class="flex flex-wrap gap-2 md:gap-0 md:flex-nowrap justify-between">
-            <div>
-                <div class="flex flex-col flex-wrap gap-2 pb-2 md:pb-0">
-                  <div class="flex gap-2">
-                    <div>
-                        <img width="27" height="37" src="./images/logoo.png" />
-                    </div>
-                    <div class="text-xl font-bold text-gray-800">
-                      Startup Landing
-                    </div>
-                    </div>
-                    <div class="font-normal text-[14px]">Terms of use   |   Privacy</div>
-                    <div class="text-gray-400 font-normal text-[14px]">Copyright by 2019 YourName, Inc</div>
-                </div>
-            </div>
-            <div>
-                <p class="md:mb-[30px] mb-[10px] text-[18px]">About Us</p>
-                <ul class="leading-8">
-                    <li><a href="#">Support Center</a></li>
-                    <li><a href="#">Customer Support</a></li>
-                    <li><a href="#">About Us</a></li>
-                    <li><a href="#">Copyright</a></li>
-                </ul>
-            </div>
-            <div>
-                <p class="md:mb-[30px] mb-[10px] text-[18px]">Our Information</p>
-                <ul class="leading-8">
-                    <li><a href="#">Return Policy</a></li>
-                    <li><a href="#">Privacy Policy</a></li>
-                    <li><a href="#">Terms & Conditions</a></li>
-                    <li><a href="#">Site Map</a></li>
-                </ul>
-            </div>
-            <div>
-                <p class="md:mb-[30px] mb-[10px] text-[18px]">My Account</p>
-                <ul class="leading-8">
-                    <li><a href="#">Press inquiries</a></li>
-                    <li><a href="#">Social media</a></li>
-                    <li><a href="#">directories</a></li>
-                    <li><a href="#">Images & B-roll</a></li>
-                </ul>
-            </div>
-            <div>
-                <p class="md:mb-[30px] mb-[10px] text-[18px]">Connect</p>
-                <ul class="leading-8">
-                    <li>
-                        <div class="flex space-x-2">
-                            <div>
-                                <img class="mt-0.75" width="20" src="images/facebook.png" alt="facebook" />
-                            </div>
-                            <a href="#">Facebook</a>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="flex space-x-2">
-                            <div>
-                                <img class="mt-0.75" width="20" src="images/twitter.png" alt="twitter" />
-                            </div>
-                            <a href="#">Twitter</a>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="flex space-x-2">
-                            <div>
-                                <img class="mt-0.75" width="20" src="images/github.png" alt="github" />
-                            </div>
-                            <a href="#">Github</a>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="flex space-x-2">
-                            <div>
-                                <img class="mt-0.75" width="20" src="images/dribble.png" alt="dribble" />
-                            </div>
-                            <a href="#">Dribbble</a>
-                        </div>
-                    </li>
-                </ul> 
-            </div>
-        </div>
-    </div>
+    <div class="bg-[#F9FAFC] w-[100vw] py-8 -z-20 mt-[-80px] relative">
+        <div class="mx-auto max-w-[1280px] mt-[100px] mb-[40px]">
+           <div class="flex flex-wrap gap-2 md:gap-0 md:flex-nowrap justify-between">
+               <div>
+                   <div class="flex flex-col flex-wrap gap-2 pb-2 md:pb-0">
+                     <div class="flex gap-2">
+                       <div>
+                           <img width="27" height="37" src="./images/logoo.png" />
+                       </div>
+                       <div class="text-xl font-bold text-gray-800">
+                         Startup Landing
+                       </div>
+                       </div>
+                       <div class="font-normal text-[14px]">Terms of use   |   Privacy</div>
+                       <div class="text-gray-400 font-normal text-[14px]">Copyright by 2019 YourName, Inc</div>
+                   </div>
+               </div>
+               <div>
+                   <p class="md:mb-[30px] mb-[10px] text-[18px]">About Us</p>
+                   <ul class="leading-8">
+                       <li><a href="#">Support Center</a></li>
+                       <li><a href="#">Customer Support</a></li>
+                       <li><a href="#">About Us</a></li>
+                       <li><a href="#">Copyright</a></li>
+                   </ul>
+               </div>
+               <div>
+                   <p class="md:mb-[30px] mb-[10px] text-[18px]">Our Information</p>
+                   <ul class="leading-8">
+                       <li><a href="#">Return Policy</a></li>
+                       <li><a href="#">Privacy Policy</a></li>
+                       <li><a href="#">Terms & Conditions</a></li>
+                       <li><a href="#">Site Map</a></li>
+                   </ul>
+               </div>
+               <div>
+                   <p class="md:mb-[30px] mb-[10px] text-[18px]">My Account</p>
+                   <ul class="leading-8">
+                       <li><a href="#">Press inquiries</a></li>
+                       <li><a href="#">Social media</a></li>
+                       <li><a href="#">directories</a></li>
+                       <li><a href="#">Images & B-roll</a></li>
+                   </ul>
+               </div>
+               <div>
+                   <p class="md:mb-[30px] mb-[10px] text-[18px]">Connect</p>
+                   <ul class="leading-8">
+                       <li>
+                           <div class="flex space-x-2">
+                               <div>
+                                   <img class="mt-0.75" width="20" src="images/facebook.png" alt="facebook" />
+                               </div>
+                               <a href="#">Facebook</a>
+                           </div>
+                       </li>
+                       <li>
+                           <div class="flex space-x-2">
+                               <div>
+                                   <img class="mt-0.75" width="20" src="images/twitter.png" alt="twitter" />
+                               </div>
+                               <a href="#">Twitter</a>
+                           </div>
+                       </li>
+                       <li>
+                           <div class="flex space-x-2">
+                               <div>
+                                   <img class="mt-0.75" width="20" src="images/github.png" alt="github" />
+                               </div>
+                               <a href="#">Github</a>
+                           </div>
+                       </li>
+                       <li>
+                           <div class="flex space-x-2">
+                               <div>
+                                   <img class="mt-0.75" width="20" src="images/dribble.png" alt="dribble" />
+                               </div>
+                               <a href="#">Dribbble</a>
+                           </div>
+                       </li>
+                   </ul> 
+               </div>
+           </div>
+       </div>
+       </div>
 
 
     
