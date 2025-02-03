@@ -5,180 +5,209 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link href="./dist/home.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Oswald:wght@200..700&family=Quicksand:wght@300..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <style>body {
+      font-family: 'DM Sans', sans-serif;
+    }
+    </style>
 </head>
 <body>
-    <header class="w-[1080px] mx-auto pt-4">
-        <nav class="flex justify-between items-center">
-            <!-- Logo -->
-            <div class="flex gap-2">
-                <div>
-                    <img width="27" height="37" src="./images/logoo.png" />
-                   </div>
-                  <div class="text-xl font-bold text-gray-800">
-                    Startup Landing
-                  </div>
-            </div>
-        
-            <!-- Navigation Links -->
+    <header class="py-4 mb-[100px]">
+        <nav class="w-[100%] px-[10%] flex flex-wrap justify-between items-center mb-[100px]">
+          <!-- Logo -->
+        <div class="flex gap-2">
             <div>
-            <ul class="flex space-x-6 text-gray-700">
-                <li class="hover:text-gray-900 cursor-pointer"><a href="./home.html">Home</a></li>
-                <li class="hover:text-gray-900 cursor-pointer"><a href="#">Categories</a></li>
-                <li class="hover:text-gray-900 cursor-pointer"><a href="./contact.html">Contact</a></li>
-                <li class="hover:text-gray-900 cursor-pointer"><a href="#">About Us</a></li>
+                <img width="27" height="37" src="./images/logoo.png" />
+               </div>
+              <div class="text-xl font-bold text-gray-800">
+                Startup Landing
+              </div>
+        </div>
+           
+      
+          <!-- Navigation Links -->
+          <div>
+            <ul class="flex flex-wrap space-x-6 gap-2 text-gray-700 pt-[20px] md:pt-[1px]">
+              <li class="hover:text-gray-900 cursor-pointer"><a href="./home.html">Home</a></li>
+              <li class="hover:text-gray-900 cursor-pointer"><a href="#">Categories</a></li>
+              <li class="hover:text-gray-900 cursor-pointer"><a href="./contact.html">Contact</a></li>
+              <li class="hover:text-gray-900 cursor-pointer"><a href="#">About Us</a></li>
             </ul>
-            </div>
-        
-            <!-- Button -->
-            <div>
+          </div>
+      
+          <!-- Button -->
+          <div class="max-w-[60%] md:max-w-[20%] pt-[20px] md:pt-[1px]">
             <button class="px-6 py-2 bg-[#FABF62] text-white rounded hover:bg-[#faa962] cursor-pointer hover:drop-shadow-2xl">
-                Purchase Now
+              Purchase Now
             </button>
-            </div>
+          </div>
         </nav>
     </header>
-
     <!-- contact us -->
+     <div class="bg-gradient-to-b from-[#FFFEFC80] to-[#FEFAF5]">
 
-    <div class="w-[1080px] mx-auto my-auto mt-[60px] mb-[60px]">
+    <div class="max-w-[1280px] w-[80%] mx-auto my-auto mt-[60px] mb-[60px]">
         <div class="flex gap-6">
             <div class="w-12 border-t-2 border-black-300 mt-[42px]"></div>
             <h2 class="text-[40px] font-semibold">Contact us</h2>
         </div>
     </div>
 
-    <div class="w-[1080px] mx-auto my-auto pb-[100px]">
-        <div class="flex justify-between">
-            <div class="flex gap-6">
+    <div class="max-w-[1280px] w-[80%] mx-auto my-auto pb-[100px]">
+        <div class="flex flex-wrap justify-between">
+            <div class="flex gap-6 max-w-[340px]">
                 <div>
                     <img class="w-[70px] h-[70px]" src="./images/address.png" alt="address" />
                 </div>
                 <div>
-                    <div class="font-semibold text-[30px]">Address</div>
-                    <div class="font-medium text-[22px]">Jaipur Rajasthan INDIA Pin 342087</div>
+                    <div class="font-semibold text-[30px] leading-[39px]">Address</div>
+                    <div class="font-medium text-[22px] leading-[36px] text-[#545454]">Jaipur Rajasthan INDIA Pin 342087</div>
                 </div>
             </div>
-            <div class="flex gap-6">
+            <div class="flex gap-6 max-w-[340px]">
                 <div>
                     <img class="w-[70px] h-[70px]" src="./images/callus.png" alt="call us" />
                 </div>
                 <div>
-                    <div class="font-semibold text-[30px]">Call us</div>
-                    <div class="font-medium text-[22px]">+91 98765 43210</div>
+                    <div class="font-semibold text-[30px] leading-[39px]">Call us</div>
+                    <div class="font-medium text-[22px] leading-[36px] text-[#545454]">+91 98765 43210</div>
                 </div>
             </div>
-            <div class="flex gap-6">
+            <div class="flex gap-6 max-w[340px-]">
                 <div>
                     <img class="w-[70px] h-[70px]" src="./images/emailus.png" alt="email us" />
                 </div>
                 <div>
-                    <div class="font-semibold text-[30px]">Email us</div>
-                    <div class="font-medium text-[22px]">info@test.com</div>
+                    <div class="font-semibold text-[30px] leading-[39px]">Email us</div>
+                    <div class="font-medium text-[22px] leading-[36px] text-[#545454]">info@test.com</div>
                 </div>
             </div>
         </div>
+    </div>
+
     </div>
 
     <!-- get in touch -->
 
     <div class="bg-[#F9FAFC] pt-[100px] pb-[100px]">
         <div class="mb-[50px]">
-            <p class="text-center">Get in touch with us. We're here to assist you.</p>
+            <p class="text-center font-semibold text-[40px] leading-[52px] max-w-[465px] mx-auto">Get in touch with us. We're here to assist you.</p>
         </div>
-        <div class="w-[960px] mx-auto rounded-[30px] bg-white p-6">
-            <div class="flex gap-4 justify-center h-[80px]">
+        <div class="max-w-[1160px] md:w-[72%] mx-auto rounded-[30px] bg-white p-6 text-[#808080]">
+            <div class="flex flex-wrap gap-4 justify-center h-[80px]">
                 <div>
-                    <div>
+                    <div class="mb-4">
                         <p>Full name</p>
-                        <p>Ram Kumar Sharma</p>
+                        <p class="text-black">Ram Kumar Sharma</p>
                     </div>
                     <div class="border-b-[1px] w-[400px] border-[#808080]"></div>
                 </div>
                 <div>
-                    <div>
+                    <div class="mb-8">
                         <p>Email address</p>
                     </div>
                     <div class="mt-6 border-b-[1px] w-[400px] border-[#808080]"></div>
                 </div>
             </div>
-            <div class="flex gap-4 justify-center h-[80px]">
+            <div class="flex flex-wrap gap-4 justify-center h-[80px]">
                 <div>
-                    <div>
+                    <div class="mb-8">
                         <p>Phone number</p>
                     </div>
                     <div class="border-b-[1px] w-[400px] border-[#808080]"></div>
                 </div>
                 <div>
-                    <div>
+                    <div class="mb-8">
                         <p>Date of birth</p>
                     </div>
                     <div class="border-b-[1px] w-[400px] border-[#808080]"></div>
                 </div>
             </div>
-            <div class="flex gap-4 justify-center h-[80px]">
+            <div class="flex flex-wrap gap-4 justify-center h-[80px]">
                 <div>
-                    <div>
+                    <div class="mb-8">
                         <p>Gender</p>
                     </div>
                     <div class="border-b-[1px] w-[400px] border-[#808080]"></div>
                 </div>
                 <div>
-                    <div>
+                    <div class="mb-8">
                         <p>City</p>
                     </div>
                     <div class="border-b-[1px] w-[400px] border-[#808080]"></div>
                 </div>
             </div>
-            <div class="flex gap-4 justify-center h-[80px]">
+            <div class="flex flex-wrap gap-4 justify-center h-[80px]">
                 <div>
-                    <div>
+                    <div class="mb-8">
                         <p>State</p>
                     </div>
                     <div class="border-b-[1px] w-[400px] border-[#808080]"></div>
                 </div>
                 <div>
-                    <div>
+                    <div class="mb-8">
                         <p>Country</p>
                     </div>
                     <div class="border-b-[1px] w-[400px] border-[#808080]"></div>
                 </div>
             </div>
-            <div class="flex gap-4 justify-center h-[80px]">
+            <div class="flex flex-wrap gap-4 justify-center h-[80px]">
                 <div>
-                    <div>
+                    <div class="mb-8">
                         <p>Address</p>
                     </div>
                     <div class="border-b-[1px] w-[400px] border-[#808080]"></div>
                 </div>
                 <div>
-                    <div>
+                    <div class="mb-8">
                         <p>Message</p>
                     </div>
                     <div class="border-b-[1px] w-[400px] border-[#808080]"></div>
                 </div>
             </div>
-            <div class="flex gap-4 justify-center h-[80px]">
-                <div>
-                    <div></div>
+            <div class="flex flex-wrap gap-4 justify-center h-[80px]">
+                <div class="flex-1 pl-[80px]">
+                    <div>Request a counselling session</div>
+                    <div class="flex gap-10">
+                        <div class="flex gap-2">
+                            <div class="flex justify-center items-center w-[23px] h-[23px] bg-[#FFEED3] rounded-[999px]">
+                                <div class="mx-auto w-[17px] h-[17px] bg-[#FABF62] rounded-[999px]"></div>
+                            </div>
+                            <div>Yes</div>
+                        </div>
+                        <div class="flex gap-2">
+                            <div class="w-[23px] h-[23px] bg-[#FFEED3] rounded-[999px]"></div>
+                            <div>No</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="pr-[80px]">
+                    <div>Upload your CV/Resume</div>
+                    <img height="23" src="./images/choose.png" />
                     <div class="border-b-[1px] w-[400px] border-[#808080]"></div>
                 </div>
-                <div>
-                    <div></div>
-                    <div class="border-b-[1px] w-[400px] border-[#808080]"></div>
-                </div>
+            </div>
+            <div class="flex gap-4 pl-[80px]">
+                <input type="checkbox" class="appearance-none bg-[#FFEED3] w-[28px] h-[28px] rounded-md checked:bg-[#F7B267]" />
+                <p>Agree terms and conditions</p>
+            </div>
+            <div class="flex gap-4 pl-[80px]">
+                <button class="font-medium text-[16px] bg-[#FABF62] text-white px-30 py-2 mt-8">Submit Information</button>
             </div>
         </div>
     </div>
 
     <!-- map -->
-     <div class="w-[1080px] mx-auto mt-[100px] mb-[100px]">
-        <img src="./images/map.png" alt="map" width="1080" height="444" />
+     <div class="max-w-[1251px] w-[80%] mx-auto mt-[100px] mb-[100px]">
+        <img src="./images/map.png" alt="map" width="1251" height="537" />
      </div>
 
      <!-- FAQ -->
-      <div class="w-[640px] mx-auto">
-        <p class="text-center">Do you have any question?</p>
-        <p class="text-center">Our support team is ready to help you, please contact them.</p>
+      <div class="max-w-[640px] mx-auto px-4">
+        <p class="text-center font-medium text-[30px] leading-[50px]">Do you have any question?</p>
+        <p class="text-center font-normal text-[16px] leading-[35px]">Our support team is ready to help you, please contact them.</p>
 
         <div class="space-y-2 mt-[20px]">
             <!-- Accordion Item 1 -->
@@ -187,7 +216,7 @@
                     <div class="flex items-center gap-2">
                         <span class="text-xl bg-[#FABF62] rounded-[50%] w-6 h-6 text-center text-white font-bold group-open:hidden">+</span>
                         <span class="text-xl bg-[#FABF62] rounded-[50%] w-6 h-6 text-center text-white font-bold hidden group-open:inline">−</span>
-                        <p>How to contact with riders emergency?</p>
+                        <p class="text-[18px]">How to contact with riders emergency?</p>
                     </div>
                 </summary>
                 <p class="p-[15px] text-gray-600">
@@ -201,7 +230,7 @@
                     <div class="flex items-center gap-2">
                         <span class="text-xl bg-[#FABF62] rounded-[50%] w-6 h-6 text-center text-white font-bold group-open:hidden">+</span>
                         <span class="text-xl bg-[#FABF62] rounded-[50%] w-6 h-6 text-center text-white font-bold hidden group-open:inline">−</span>
-                        <p>App installation failed, how to update system information?</p>
+                        <p class="text-[18px]">App installation failed, how to update system information?</p>
                     </div>
                 </summary>
                 <p class="p-[15px] text-gray-600">
@@ -215,7 +244,7 @@
                     <div class="flex items-center gap-2">
                         <span class="text-xl bg-[#FABF62] rounded-[50%] w-6 h-6 text-center text-white font-bold group-open:hidden">+</span>
                         <span class="text-xl bg-[#FABF62] rounded-[50%] w-6 h-6 text-center text-white font-bold hidden group-open:inline">−</span>
-                        <p>Website response taking time, how to improve?</p>
+                        <p class="text-[18px]">Website response taking time, how to improve?</p>
                     </div>
                 </summary>
                 <p class="p-[15px] text-gray-600">
@@ -229,7 +258,7 @@
                     <div class="flex items-center gap-2">
                         <span class="text-xl bg-[#FABF62] rounded-[50%] w-6 h-6 text-center text-white font-bold group-open:hidden">+</span>
                         <span class="text-xl bg-[#FABF62] rounded-[50%] w-6 h-6 text-center text-white font-bold hidden group-open:inline">−</span>
-                        <p>New update fixed all bugs and issues</p>
+                        <p class="text-[18px]">New update fixed all bugs and issues</p>
                     </div>
                 </summary>
                 <p class="p-[15px] text-gray-600">
@@ -241,15 +270,15 @@
 
       <!-- newsletter -->
        <div class="my-[100px]">
-        <div class="w-[840px] mx-auto">
-            <p class="text-center font-semibold text-[58px] text-[#1F1F1F] mb-[20px]">Subscribe to Our Newsletter for Design Insights</p>
-            <p class="text-center font-medium text-[24px] text-[#545454] mb-[20px]">Be the first to discover trends, inspirations, and special offers as we bring the world of design directly to your inbox</p>
+        <div class="m-w-[840px] w-[70%] mx-auto">
+            <p class="text-center font-semibold text-[58px] leading-[75px] max-w-[849px] mx-auto text-[#1F1F1F] mb-[20px]">Subscribe to Our Newsletter for Design Insights</p>
+            <p class="text-center font-medium text-[24px] leading-[40px] max-w-[770px] mx-auto text-[#545454] mb-[20px]">Be the first to discover trends, inspirations, and special offers as we bring the world of design directly to your inbox</p>
         </div>
-        <div class="w-[840px] mx-auto p-6 my-[40px]">
-            <div class="flex gap-4 items-center bg-white shadow-lg p-2" style="box-shadow: 0 -10px 15px -3px rgba(0, 0, 0, 0.1), 0 10px 15px -3px rgba(0, 0, 0, 0.1)">
-              <div class="flex-1 flex items-center gap-2 px-4">
+        <div class="max-w-[979px] w-[68%] mx-auto p-6 my-[40px]">
+            <div class="flex flex-wrap md:flex-nowrap gap-4 items-center bg-white shadow-lg p-2" style="box-shadow: 0 -10px 15px -3px rgba(0, 0, 0, 0.1), 0 10px 15px -3px rgba(0, 0, 0, 0.1)">
+              <div class="flex-1 flex items-center gap-2 px-4 py-4">
                 <img width="24" src="./images/email.png" alt="email" />
-                <input 
+                <input class="text-[18px] text-gray-800" 
                   type="email" 
                   placeholder="Enter your email address" 
                   class="w-full py-2 focus:outline-none text-gray-600 text-lg"
@@ -262,35 +291,48 @@
           </div>
        </div>
 
-       <!-- bottom banner -->
-        <div class="w-[1080px] bg-[#183656] flex mx-auto items-center py-[30px] rounded-2xl">
-            <div class="my-auto">
-                <p class="text-white text-[36px] font-bold pl-[40px]">Do you have any question? Feel free to contact us</p>
+     <!-- bottom banner -->
+     <div class="w-[80%] max-w-[1280px] bg-[#183656] flex flex-wrap md:flex-nowrap mx-auto items-center py-[30px] rounded-2xl">
+        <div class="my-auto">
+            <p class="text-white text-[36px] font-bold leading-[55px] pl-[40px]">Do you have any question? Feel free to contact us</p>
+        </div>
+        <div class="pr-[60px]">
+            <img width="248" src="./images/banner-spiral.png" alt="spiral" />
+        </div>
+        <div class="pr-[40px]">
+            <div class="ml-[60px]">
+                <img src="./images/upward-focus.png" alt="focus" />
             </div>
-            <div class="pr-[60px]">
-                <img width="248" src="./images/banner-spiral.png" alt="spiral" />
+            <div>
+                <p class="text-[17px] font-bold p-4 bg-white w-[260px] text-center rounded-[5px]">CONTACT US NOW</p>
             </div>
-            <div class="pr-[40px]">
-                <div class="ml-[60px]">
-                    <img src="./images/upward-focus.png" alt="focus" />
-                </div>
-                <div>
-                    <p class="text-[17px] font-bold p-4 bg-white w-[260px] text-center rounded-[5px] cursor-pointer hover:drop-shadow-2xl">CONTACT US NOW</p>
-                </div>
-                <div class="ml-[60px]">
-                    <img src="./images/downward-focus.png" alt="focus" />
-                </div>
+            <div class="ml-[60px]">
+                <img src="./images/downward-focus.png" alt="focus" />
             </div>
         </div>
+    </div>
 
-         <!-- footer -->
+     <!-- footer -->
 
-     <div class="mx-auto w-[980px] my-[100px]">
-        <div class="flex justify-between">
-            <div></div>
+     <div class="px-[10%] mx-auto w-[100%] mt-[100px] mb-[40px]">
+        <div class="flex flex-wrap gap-2 md:gap-0 md:flex-nowrap justify-between">
             <div>
-                <p class="mb-[30px]">About Us</p>
-                <ul>
+                <div class="flex flex-col flex-wrap gap-2 pb-2 md:pb-0">
+                  <div class="flex gap-2">
+                    <div>
+                        <img width="27" height="37" src="./images/logoo.png" />
+                    </div>
+                    <div class="text-xl font-bold text-gray-800">
+                      Startup Landing
+                    </div>
+                    </div>
+                    <div class="font-normal text-[14px]">Terms of use   |   Privacy</div>
+                    <div class="text-gray-400 font-normal text-[14px]">Copyright by 2019 YourName, Inc</div>
+                </div>
+            </div>
+            <div>
+                <p class="md:mb-[30px] mb-[10px] text-[18px]">About Us</p>
+                <ul class="leading-8">
                     <li><a href="#">Support Center</a></li>
                     <li><a href="#">Customer Support</a></li>
                     <li><a href="#">About Us</a></li>
@@ -298,8 +340,8 @@
                 </ul>
             </div>
             <div>
-                <p class="mb-[30px]">Our Information</p>
-                <ul>
+                <p class="md:mb-[30px] mb-[10px] text-[18px]">Our Information</p>
+                <ul class="leading-8">
                     <li><a href="#">Return Policy</a></li>
                     <li><a href="#">Privacy Policy</a></li>
                     <li><a href="#">Terms & Conditions</a></li>
@@ -307,8 +349,8 @@
                 </ul>
             </div>
             <div>
-                <p class="mb-[30px]">My Account</p>
-                <ul>
+                <p class="md:mb-[30px] mb-[10px] text-[18px]">My Account</p>
+                <ul class="leading-8">
                     <li><a href="#">Press inquiries</a></li>
                     <li><a href="#">Social media</a></li>
                     <li><a href="#">directories</a></li>
@@ -316,8 +358,8 @@
                 </ul>
             </div>
             <div>
-                <p class="mb-[30px]">Connect</p>
-                <ul>
+                <p class="md:mb-[30px] mb-[10px] text-[18px]">Connect</p>
+                <ul class="leading-8">
                     <li>
                         <div class="flex space-x-2">
                             <div>
