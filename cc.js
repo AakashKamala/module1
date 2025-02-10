@@ -2,16 +2,9 @@ document.addEventListener("DOMContentLoaded", function () {
     document.getElementById("contactForm").addEventListener("submit", function (event) {
         event.preventDefault();
         clearErrors();
-        // if (validateForm()) {
-        //     alert("Form submitted successfully!");
-        //     this.submit();
-        // }
-
         if (validateForm()) {
-            showPopup();  // Show the success popup
-            setTimeout(() => {
-                this.submit(); // Uncomment this line for actual form submission
-            }, 3000); // Delay submission for user to see the popup
+            alert("Form submitted successfully!");
+            this.submit(); // Uncomment this line to allow actual submission
         }
     });
 
@@ -22,78 +15,6 @@ document.addEventListener("DOMContentLoaded", function () {
         });
     });
 });
-
-
-
-function showPopup() {
-    const popup = document.getElementById("submissionPopup");
-    popup.classList.add("show");
-
-    setTimeout(() => {
-        hidePopup();
-    }, 3000);
-}
-
-function hidePopup() {
-    const popup = document.getElementById("submissionPopup");
-    popup.classList.remove("show");
-}
-
-// function validateForm() {
-//     let isValid = true;
-    
-//     const fields = [
-//         { name: "full_name", message: "Full name is required with max length 50.", maxLength: 50 },
-//         { name: "email", message: "Enter a valid email address.", pattern: /^[^\s@]+@[^\s@]+\.[^\s@]+$/ },
-//         { name: "phone", message: "Enter a valid 10-digit phone number.", pattern: /^\d{10}$/ },
-//         { name: "dob", message: "Date of birth is required." },
-//         { name: "gender", message: "Please select your gender." },
-//         { name: "city", message: "City must be 50 characters or less.", maxLength: 50 },
-//         { name: "state", message: "State must be 50 characters or less.", maxLength: 50 },
-//         { name: "country", message: "Country must be 50 characters or less.", maxLength: 50 },
-//         { name: "address", message: "Address must be 200 characters or less.", maxLength: 200 },
-//         { name: "message", message: "Message must be 500 characters or less.", maxLength: 500 },
-//         { name: "counselling", message: "Please select an option for counselling." }
-//     ];
-    
-//     fields.forEach(field => {
-//         const input = document.querySelector(`[name='${field.name}']`);
-//         if (input) {
-//             if (field.pattern && !field.pattern.test(input.value.trim())) {
-//                 showError(input, field.message);
-//                 isValid = false;
-//             } else if (field.maxLength && input.value.trim().length > field.maxLength) {
-//                 showError(input, field.message);
-//                 isValid = false;
-//             } else if (!input.value.trim()) {
-//                 showError(input, field.message);
-//                 isValid = false;
-//             }
-//         }
-//     });
-    
-//     const resume = document.querySelector("input[name='resume']");
-//     if (resume.files.length === 0) {
-//         showError(resume, "Please upload your CV/Resume.");
-//         isValid = false;
-//     } else {
-//         const allowedExtensions = ["pdf", "doc", "docx"];
-//         const fileExtension = resume.files[0].name.split(".").pop().toLowerCase();
-//         if (!allowedExtensions.includes(fileExtension)) {
-//             showError(resume, "Only PDF, DOC, and DOCX files are allowed.");
-//             isValid = false;
-//         }
-//     }
-    
-//     const terms = document.querySelector("input[name='terms']");
-//     if (!terms.checked) {
-//         showError(terms, "You must agree to the terms and conditions.");
-//         isValid = false;
-//     }
-    
-//     return isValid;
-// }
-
 
 function validateForm() {
     let isValid = true;
@@ -164,20 +85,12 @@ function showError(input, message) {
     errorSpan.textContent = message;
 }
 
-// function removeError(input) {
-//     let errorSpan = input.parentElement.querySelector(".error-message");
-//     if (errorSpan) {
-//         errorSpan.remove();
-//     }
-// }
-
 function removeError(input) {
-    let errorSpan = input.parentElement.nextElementSibling; // Look for the error message outside the parent
-    if (errorSpan && errorSpan.classList.contains("error-message")) {
+    let errorSpan = input.parentElement.querySelector(".error-message");
+    if (errorSpan) {
         errorSpan.remove();
     }
 }
-
 
 function clearErrors() {
     document.querySelectorAll(".error-message").forEach(errorSpan => errorSpan.remove());

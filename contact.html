@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link href="./dist/home.css" rel="stylesheet">
+    <link rel="stylesheet" href="popup.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Oswald:wght@200..700&family=Quicksand:wght@300..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
@@ -15,8 +16,11 @@
 </head>
 <body>
 
-    <div class="w-[100vw] pt-6">
-        <nav class="w-[80%] max-w-[1280px] mx-auto flex flex-wrap justify-between items-center mb-[100px]">
+    <!-- <div class="w-[100vw] pt-6">
+        <nav class="w-[80%] max-w-[1280px] mx-auto flex flex-wrap justify-between items-center mb-[100px]"> -->
+            <div class="w-full pt-6">
+                <nav class="mx-auto max-w-[1280px] px-4 flex flex-wrap justify-between items-center">
+              
           <!-- Logo -->
         <a href="./home.html">
             <div class="flex gap-2">
@@ -63,14 +67,14 @@
     <!-- contact us -->
      <div class="bg-gradient-to-b from-[#FFFEFC80] to-[#FEFAF5]">
 
-    <div class="max-w-[1280px] w-[80%] mx-auto my-auto mt-[60px] mb-[60px]">
+    <div class="max-w-[1280px] w-[80%] px-4 mx-auto my-auto mt-[60px] mb-[60px]">
         <div class="flex gap-6">
             <div class="w-12 border-t-2 border-black-300 mt-[42px]"></div>
             <h2 class="text-[40px] font-semibold">Contact us</h2>
         </div>
     </div>
 
-    <div class="max-w-[1280px] w-[80%] mx-auto my-auto pb-[100px]">
+    <div class="max-w-[1280px] w-[80%] px-4 mx-auto my-auto pb-[100px]">
         <div class="flex flex-wrap justify-between">
             <div class="flex gap-6 max-w-[340px]">
                 <div>
@@ -436,10 +440,15 @@
                             <input type="file" name="resume" class="text-black w-full outline-none" accept=".pdf,.doc,.docx" required />
                         </div>
                     </div>
-                    <div class="col-span-2 flex items-center gap-3">
+                    <!-- <div class="col-span-2 flex items-center gap-3">
                         <input type="checkbox" name="terms" class="appearance-none bg-[#FFEED3] w-[28px] h-[28px] rounded-md checked:bg-[#F7B267]" required />
                         <p class="text-gray-700">Agree to terms and conditions</p>
-                    </div>
+                    </div> -->
+                    <label class="col-span-2 flex items-center gap-3 cursor-pointer">
+                        <input type="checkbox" name="terms" class="appearance-none bg-[#FFEED3] w-[28px] h-[28px] rounded-md checked:bg-[#F7B267]" required />
+                        <p class="text-gray-700">Agree to terms and conditions</p>
+                    </label>
+                    
                     <div class="col-span-2 flex mt-4">
                         <button type="submit" class="bg-[#FABF62] text-white py-2 md:px-36 px-18 font-medium text-[16px] hover:bg-[#e5a04b]">Submit Information</button>
                     </div>
@@ -447,6 +456,11 @@
             </div>
         </div>
     </form>
+
+    <div id="submissionPopup" class="popup">
+        ✅ Form submitted successfully!
+        <button class="close-btn" onclick="hidePopup()">✖</button>
+    </div>
     
     
     
@@ -634,8 +648,11 @@
 
      <!-- footer -->
 
-    <div class="bg-[#F9FAFC] w-[100vw] py-8 px-4 -z-20 mt-[-80px] relative">
-        <div class="mx-auto max-w-[1280px] mt-[100px] mb-[40px]">
+    <!-- <div class="bg-[#F9FAFC] w-[100vw] py-8 -z-20 mt-[-80px] relative">
+        <div class="mx-auto max-w-[1280px] mt-[100px] mb-[40px]"> -->
+            <div class="w-full bg-[#F9FAFC] py-8 -z-20 mt-[-80px] relative">
+                <div class="mx-auto max-w-[1280px] px-4 mt-[100px]">
+              
            <div class="flex flex-wrap gap-2 md:gap-0 md:flex-nowrap justify-between">
                <div>
                    <div class="flex flex-col flex-wrap gap-2 pb-2 md:pb-0">

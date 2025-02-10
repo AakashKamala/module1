@@ -1,0 +1,31 @@
+.popup {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    background: rgba(0, 128, 0, 0.9);
+    color: white;
+    padding: 15px 25px;
+    border-radius: 8px;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
+    opacity: 0;
+    transform: translateY(-20px);
+    transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
+}
+
+.popup.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.popup .close-btn {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    margin-left: 15px;
+}
+
+.popup .close-btn:hover {
+    color: lightgray;
+}
